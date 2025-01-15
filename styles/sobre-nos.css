@@ -1,0 +1,26 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    gap: 24px;
+}
+.about > strong{
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--vermelho-escuro);
+}
+.about__titulo{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 60px;
+    color: var(--azul-escuro);
+}
+.about__texto{
+    font-size: 1.25rem;
+    color: var(--cinza);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 30px;
+}

@@ -1,0 +1,28 @@
+.metricas{
+    height: 288px;
+}
+.container > ul{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.metricas-item{
+    width: 280px;
+}
+.metricas__titulo{
+    font-size: 3.75rem;
+    font-weight: 600;
+    color: var(--vermelho-escuro);
+    line-height: 72px;
+    margin-bottom: 12px;
+}
+.metricas-item>strong{
+    font-size: 1.12rem;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--azul-escuro);
+}
+.metricas-item>p{
+    line-height: 24px;
+    color: var(--cinza);
+}

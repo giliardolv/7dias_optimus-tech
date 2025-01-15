@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("./header.css");
+@import url("./sobre-nos.css");
+@import url("./metricas.css");
+@import url("./vagas.css");
+@import url("./depoimentos.css");
+@import url("./formulario.css");
+@import url("./botoes.css");
+
+:root{
+    --font-principal: "Inter", sans serif;
+    --cinza: #667085;
+    --vermelho-escuro: #8E2424;
+    --vermelho-fundo: #8E24240D;
+    --branco: #ffffff;
+    --azul-escuro:#101828;
+    --cor-bordas: #EAECF0;
+    --fundo-footer: #F9FAFB;
+    ;
+}
+
+body{
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}

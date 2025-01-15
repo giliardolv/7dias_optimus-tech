@@ -1,0 +1,38 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 80px;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.texto__logo{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+ul.nav__lista{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.nav__lista-item{
+    font-weight: 500;
+    color: var(--cinza);
+}
+
+.caixa{
+    width: 142px;
+}
+
+.botoes{
+    display: flex;
+    gap: 12px;
+}
