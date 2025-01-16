@@ -2,9 +2,10 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 18px 80px;
+    padding: 1rem 0;
+    margin: 0 auto;
     height: 80px;
-    width: 100%;
+    width: 95%;
     box-sizing: border-box;
 }
 
@@ -35,4 +36,39 @@ ul.nav__lista{
 .botoes{
     display: flex;
     gap: 12px;
+}
+
+.nav__toggle {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .texto__logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    ul.nav__lista {
+        display: none;
+    }
+
+    .texto__logo {
+        display: block;
+    }
+
+    .nav__toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 3rem;
+    }
+
+    .navegacao {
+        order: -1;
+    }
+
+    header {
+        justify-content: space-evenly;
+    }
+    
 }
