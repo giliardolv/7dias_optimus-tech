@@ -27,6 +27,7 @@ ul.nav__lista{
 .nav__lista-item{
     font-weight: 500;
     color: var(--cinza);
+    padding: 1rem;
 }
 
 .caixa{
@@ -38,29 +39,27 @@ ul.nav__lista{
     gap: 12px;
 }
 
-.nav__toggle {
+.nav__btn {
     display: none;
 }
 
 @media screen and (max-width: 1024px) {
-    .texto__logo {
+    .logo {
         display: none;
     }
 }
 
 @media screen and (max-width: 860px) {
-    ul.nav__lista {
+    .caixa, .btn__cadastrar {
         display: none;
     }
 
-    .texto__logo {
+    #nav-lista, .nav__btn {
         display: block;
     }
 
-    .nav__toggle {
-        display: block;
-        cursor: pointer;
-        font-size: 3rem;
+    .logo {
+        display: flex;
     }
 
     .navegacao {
@@ -68,7 +67,30 @@ ul.nav__lista{
     }
 
     header {
-        justify-content: space-evenly;
+        justify-content: space-between;
+    }
+    
+    .nav__lista {
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        background-color: #e7e7e7;
+        transition: .6s;
+        z-index: 99;
+        height: 0px;
+        visibility: hidden;
+    }
+    
+    #nav.active #nav-lista {
+        height: calc(100vh - 80px);
+        visibility: visible;
+    }
+
+    .nav__lista-item {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
     }
     
 }
