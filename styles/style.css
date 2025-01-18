@@ -16,7 +16,8 @@
     --azul-escuro:#101828;
     --cor-bordas: #EAECF0;
     --fundo-footer: #F9FAFB;
-    ;
+    --cinza-hover: #e0e0e060;
+    --vermelho-hover: #6a1b1b;
 }
 
 body{

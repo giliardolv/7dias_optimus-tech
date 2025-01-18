@@ -13,6 +13,7 @@ header{
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
 }
 .texto__logo{
     font-size: 1.1rem;
@@ -28,6 +29,7 @@ ul.nav__lista{
     font-weight: 500;
     color: var(--cinza);
     padding: 1rem;
+    border-radius: 8px;
 }
 
 .caixa{
@@ -43,6 +45,14 @@ ul.nav__lista{
     display: none;
 }
 
+.logo, .nav__lista-item {
+    cursor: pointer;
+}
+
+.nav__lista-item:hover {
+    background-color: var(--cinza-hover);
+}
+
 @media screen and (max-width: 1024px) {
     .logo {
         display: none;
@@ -54,20 +64,21 @@ ul.nav__lista{
         display: none;
     }
 
-    #nav-lista, .nav__btn {
-        display: block;
-    }
-
+    
     .logo {
         display: flex;
     }
-
+    
     .navegacao {
         order: -1;
     }
-
+    
     header {
         justify-content: space-between;
+    }
+    
+    #nav-lista {
+        display: block;
     }
     
     .nav__lista {
@@ -80,11 +91,13 @@ ul.nav__lista{
         z-index: 99;
         height: 0px;
         visibility: hidden;
+        overflow-y: hidden;
     }
     
     #nav.active #nav-lista {
         height: calc(100vh - 80px);
         visibility: visible;
+        overflow-y: auto;
     }
 
     .nav__lista-item {
@@ -92,5 +105,42 @@ ul.nav__lista{
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, .05);
     }
+
+    .nav__btn {
+        display: flex;
+        padding: 0.5rem 0.5rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 3rem;
+    }
+
+    .hamburguer {
+        border-top: 2px solid;
+        width: 25px;
+    }
+
+    .hamburguer::after, .hamburguer::before {
+        display: block;
+        content: '';
+        width: 25px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active .hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
     
+    #nav.active .hamburguer::before {
+        transform: rotate(135deg);
+    }
 }

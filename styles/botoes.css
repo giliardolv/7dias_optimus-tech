@@ -6,6 +6,10 @@ a{
 }
 a.btn__entrar{
     color: var(--cinza);
+    border-radius: 8px;
+}
+a.btn__entrar:hover{
+    background-color: var(--cinza-hover);
 }
 a.btn__cadastrar{
     background-color: var(--vermelho-escuro);
@@ -13,6 +17,10 @@ a.btn__cadastrar{
     color: var(--branco);
     border-radius: 8px;
 }
+a.btn__cadastrar:hover {
+    background-color: var(--vermelho-hover);
+}
+
 a.btn__email{
     padding: 12px 20px;
 }

@@ -1,18 +1,18 @@
 .depoimentos{
-    width: 100%;
+    width: 95%;
     height: 500px;
+    max-width: 1216px;
+    margin: 0 auto;
 }
 .depoimentos__container{
     height: 500px;
 }
 .depimentos__lista{
-    width: 1216px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 32px;
-    padding: 64px;
-    margin: 0 auto;
     background-color: var(--vermelho-fundo);
 }
 .depoimentos-item > strong{
@@ -45,4 +45,17 @@ strong.depimentos__nome{
     font-size: 0.87rem;
     line-height: 20px;
     margin-top: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .depoimentos-item > h2{
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .depoimentos-item > h2{
+        line-height: 35px;
+    }
 }
